@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trippy Trips</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title> collapsible content</title>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <script src="js/lib/jquery-2.1.4.js"></script>
+    <script src="js/lib/jquery.mobile-1.4.5.js"></script>
+
+    <link rel="stylesheet" href="css/lib/jquery.mobile-1.4.5.css">
+    <link rel="script" href="js/sciptfile.js">
+
+    <style>
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        a new{
+            font-weight: bold;
+            padding: 5px 10px;
+            width: 200px;
+            cursor: pointer;
+            margin: 10px;
+            display: block;
+        }
+
+        button {
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .p1{
+            font-family: "Arial Narrow";
+            margin-left: 35px;
+            font-weight: bold;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        .p2{
+            font-family: "Arial Narrow";
+            margin-left: 70%;
+            font-weight: bold;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        header{
+            margin-top: 2px;
+            /*background-color: cornflowerblue;*/
+        }
+
+        .footer{
+            background-color: black;
+
+        }
+
+        h1{
+            font-family: Impact;
+            text-align: center;
+        }
+
+        h3{
+            font-family: "Arial Narrow";
+            text-align: center;
+        }
+
+        .imgLogo{
+            margin-left: 5%;
+            height: 60px;
+            width: 60px;
+        }
+
+        .imgLogo1{
+            margin-left: 70%;
+            height: 60px;
+            width: 60px;
+        }
+
+        .tp{
+            text-align: center;
+        }
+
+        section{
+            /*background-color: darkorange;*/
+        }
+
+        .button2 {background-color: Blue;} /* Blue */
+        .button3 {background-color: Black;} /* Black */
+        .mySlides {display:none;}
+    </style>
+
+
+</head>
+<body>
+
+<!--Home Page-->
+<div id="HomePage" data-role="page">
+
+    <header data-role="header" data-theme="a" data-position="fixed">
+
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#HomePage">
+                        <img src="img/airplane.png" class="imgLogo">
+                        <p class="p1">Home</p>
+                    </a>
+                </li>
+                <h1>Trippy Trips</h1>
+                <li>
+                    <a href="#Employee">
+                        <img src="img/software-engineer.png" class="imgLogo1">
+                        <p class="p2">Employee</p>
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section data-role="content">
+        <h1>Trippy Trips</h1>
+        <h3>
+            Professional Service with a Personal Touch. Our team of highly-trained, informed professionals
+            draw from their own passion for travel and dedication to quality service. For over 24 years we
+            have developed dynamic relationships with all of our clients and travel partners, and have been
+            committed to the highest standards in the travel industry. Our Most Valuable Asset is YOU, Our Client.
+            So please, take a few moments to look around our website, and contact us with any questions!
+        </h3>
+
+
+        <img src="/img/img2.jpg" class="center">
+
+        <h3>Tour Packages</h3>
+
+            <ul data-role="listview" class="ui-listview-inset" data-split-icon="gear" class="tp">
+                <li>
+                        <h2>Tour Package Name: Dubai</h2>
+                        <p>Places: Burj Khalifa</p>
+                        <p>Description: Enjoying exotic desert</p>
+                        <p>Price / person: $1750.55 </p>
+                        <p>Days: 6 Days 5 Nights</p>
+                        <p>Start date: 2023/01/11</p>
+                        <p>End date: 2023/01/17</p>
+
+                        <a href="#BookTourPackage" class="btn btn-primary text-center">
+                            Book Package
+                        </a>
+
+                </li>
+                <br>
+
+                <li>
+                    <h2>Tour Package Name: Maldives</h2>
+                    <p>Places: Bandos Island</p>
+                    <p>Description: Enjoying Beaches</p>
+                    <p>Price / person: $2150.95 </p>
+                    <p>Days: 7 Days 6 Nights</p>
+                    <p>Start date: 2023/02/11</p>
+                    <p>End date: 2023/02/18</p>
+
+                    <a href="#BookTourPackage" class="btn btn-primary text-center">
+                        Book Package
+                    </a>
+
+                </li>
+            </ul>
+    </section>
+
+    <footer data-role="footer" data-position="fixed" class="footer">
+        <h3>&copy; 2022 Trippy Trips</h3>
+    </footer>
+</div>
+
+<!--Book Tour Package-->
+<div id="BookTourPackage" data-role="page">
+
+    <header data-role="header" data-theme="a" data-position="fixed">
+
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#HomePage">
+                        <img src="img/airplane.png" class="imgLogo">
+                        <p class="p1">Home</p>
+                    </a>
+                </li>
+                <h1>Trippy Trips</h1>
+                <li>
+                    <a href="#Employee">
+                        <img src="img/software-engineer.png" class="imgLogo1">
+                        <p class="p2">Employee</p>
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section data-role="content">
+        <h1>Customer Booking Details</h1>
+
+        <label for = "Name">Customer Name: </label>
+        <input type="text" id="Name" name="Name">
+
+        <label for="customerEmail">Email: </label>
+        <input type="email" id="customerEmail" name="customerEmail">
+
+        <label for="contactNo">Contact No.: </label>
+        <input type="text" id="contactNo" name="contactNo">
+
+        <label for="numPerson">Number Of Person:</label>
+        <select name="numPerson" id="numPerson" data-native-menu="false">
+            <option value="One">1</option>
+            <option value="Two" selected>2</option>
+            <option value="Three" >3</option>
+            <option value="Four">4</option>
+            <option value="Five">5</option>
+            <option value="Six">6</option>
+            <option value="Seven">7</option>
+            <option value="Eight">8</option>
+            <option value="Nine">9</option>
+            <option value="Ten">10</option>
+        </select>
+
+        <label for="total">Total Price:  </label>
+        <input type="text" id="total" name="total">
+        <br>
+
+        <button style = "background-color: #008CBA; color: white" onclick="congratulations()">Book</button>
+        <button style="width:100%" data-inline="true">Cancel</button>
+
+    </section>
+
+    <footer data-role="footer" data-position="fixed">
+        <h3>&copy; 2022 Trippy Trips</h3>
+    </footer>
+</div>
+
+<!--Employee Page-->
+<div id="Employee" data-role="page">
+
+    <header data-role="header" data-theme="a" data-position="fixed">
+
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#HomePage">
+                        <img src="img/airplane.png" class="imgLogo">
+                        <p class="p1">Home</p>
+                    </a>
+                </li>
+                <h1>Trippy Trips</h1>
+                <li>
+                    <a href="#Employee">
+                        <img src="img/software-engineer.png" class="imgLogo1">
+                        <p class="p2">Employee</p>
+                    </a>
+
+                </li>
+            </ul>
+
+            <ul>
+                <li><a href="#ToursList" data-icon="home" class="ui-btn-active ui state-persist">List of Tours</a> </li>
+                <li><a href ="#BookingsList" data-icon="grid">Bookings</a> </li>
+                <li><a href ="#AddTour" data-icon="plus">Add Tour Package</a> </li>
+                <li><a href ="#EditTour" data-icon="gear">Edit Tour Package</a> </li>
+            </ul>
+        </div>
+    </header>
+
+    <section data-role="content">
+
+        <h3>Tour Packages</h3>
+
+        <ul data-role="listview" class="ui-listview-inset" data-split-icon="gear">
+            <li>
+                <a href="#" >
+                    <h2>Tour Package Name: Dubai</h2>
+                    <p>Places: Burj Khalifa</p>
+                    <p>Description: Enjoying exotic desert</p>
+                    <p>Price / person: $1750.55 </p>
+                    <p>Days: 6 Days 5 Nights</p>
+                    <p>Start date: 2023/01/11</p>
+                    <p>End date: 2023/01/17</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" >
+                <h2>Tour Package Name: Maldives</h2>
+                <p>Places: Bandos Island</p>
+                <p>Description: Enjoying Beaches</p>
+                <p>Price / person: $2150.95 </p>
+                <p>Days: 7 Days 6 Nights</p>
+                <p>Start date: 2023/02/11</p>
+                <p>End date: 2023/02/18</p>
+                </a>
+            </li>
+
+
+        </ul>
+    </section>
+    <footer data-role="footer" data-position="fixed">
+        <h3>&copy; 2022 Trippy Trips</h3>
+    </footer>
+</div>
+
+<!--List of Booking Page-->
+<div id="BookingsList" data-role="page">
+
+    <header data-role="header" data-theme="a" data-position="fixed">
+
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#HomePage">
+                        <img src="img/airplane.png" class="imgLogo">
+                        <p class="p1">Home</p>
+                    </a>
+                </li>
+                <h1>Trippy Trips</h1>
+                <li>
+                    <a href="#Employee">
+                        <img src="img/software-engineer.png" class="imgLogo1">
+                        <p class="p2">Employee</p>
+                    </a>
+
+                </li>
+            </ul>
+
+            <ul>
+                <li><a href="#Employee" data-icon="home" >List of Tours</a> </li>
+                <li><a href ="#BookingsList" data-icon="grid" class="ui-btn-active ui state-persist" >Bookings</a> </li>
+                <li><a href ="#AddTour" data-icon="plus">Add Tour Package</a> </li>
+                <li><a href ="#EditTour" data-icon="gear">Edit Tour Package</a> </li>
+            </ul>
+        </div>
+    </header>
+
+    <section data-role="content">
+
+        <h3>List of Bookings</h3>
+
+        <ul data-role="listview" class="ui-listview-inset" data-split-icon="gear">
+            <li>
+                <a href="#" >
+                    <h2>Customer Name: Jason Smith</h2>
+                    <p>Email: jasons345@gmail.com</p>
+                    <p>Contact No.:  +1 987 878 7890</p>
+                    <p>No. Of Person: 2 </p>
+                    <p>Total Price: $1750.75</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" >
+                    <h2>Customer Name: Tessa Evans</h2>
+                    <p>Email: tessaevanas1199@gmail.com</p>
+                    <p>Contact No.:  +1 226 765 5059</p>
+                    <p>No. Of Person: 2 </p>
+                    <p>Total Price: $2250.55</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <footer data-role="footer" data-position="fixed">
+        <h3>&copy; 2022 Trippy Trips</h3>
+    </footer>
+</div>
+
+<!--Add a tour Package-->
+<div id="AddTour" data-role="page">
+
+    <header data-role="header" data-theme="a" data-position="fixed">
+
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#HomePage">
+                        <img src="img/airplane.png" class="imgLogo">
+                        <p class="p1">Home</p>
+                    </a>
+                </li>
+                <h1>Trippy Trips</h1>
+                <li>
+                    <a href="#Employee">
+                        <img src="img/software-engineer.png" class="imgLogo1">
+                        <p class="p2">Employee</p>
+                    </a>
+
+                </li>
+            </ul>
+
+            <ul>
+                <li><a href="#Employee" data-icon="home" >List of Tours</a> </li>
+                <li><a href ="#BookingsList" data-icon="grid">Bookings</a> </li>
+                <li><a href ="#AddTour" data-icon="plus"  class="ui-btn-active ui state-persist">Add Tour Package</a> </li>
+                <li><a href ="#EditTour" data-icon="gear">Edit Tour Package</a> </li>
+            </ul>
+        </div>
+    </header>
+
+    <section data-role="content">
+
+        <h3>Add Tour Packages</h3>
+
+        <label for = "tourName">Tour Package Name</label>
+        <input type="text" id="tourName" name="tourName">
+
+        <label for="places">Places:</label>
+        <input type="text" id="places" name="places">
+
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description">
+
+        <label for="numPerson1">Number Of Person:</label>
+        <select name="numPerson1" id="numPerson1" data-native-menu="false">
+            <option value="One">1</option>
+            <option value="Two" selected>2</option>
+            <option value="Three" >3</option>
+            <option value="Four">4</option>
+            <option value="Five">5</option>
+            <option value="Six">6</option>
+            <option value="Seven">7</option>
+            <option value="Eight">8</option>
+            <option value="Nine">9</option>
+            <option value="Ten">10</option>
+        </select>
+
+        <label for="noOfDays">No. of Days:</label>
+        <input type="text" id="noOfDays" name="noOfDays">
+
+        <label for="startDate">Start Date: </label>
+        <input type="date" id="startDate" name="startDate">
+
+        <label for="endDate">Start Date: </label>
+        <input type="date" id="endDate" name="endDate">
+        <br>
+
+        <button style = "background-color: #008CBA; color: white">Add</button>
+        <button style = "background-color: #B90000; color: white">Cancel</button>
+
+    </section>
+
+        <footer data-role="footer" data-position="fixed">
+        <h3>&copy; 2022 Trippy Trips</h3>
+    </footer>
+</div>
+
+<!--Edit tour Page-->
+<div id="EditTour" data-role="page">
+
+    <header data-role="header" data-theme="a" data-position="fixed">
+
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#HomePage">
+                        <img src="img/airplane.png" class="imgLogo">
+                        <p class="p1">Home</p>
+                    </a>
+                </li>
+                <h1>Trippy Trips</h1>
+                <li>
+                    <a href="#Employee">
+                        <img src="img/software-engineer.png" class="imgLogo1">
+                        <p class="p2">Employee</p>
+                    </a>
+
+                </li>
+            </ul>
+
+            <ul>
+                <li><a href="#Employee" data-icon="home" >List of Tours</a> </li>
+                <li><a href ="#BookingsList" data-icon="grid">Bookings</a> </li>
+                <li><a href ="#AddTour" data-icon="plus">Add Tour Package</a> </li>
+                <li><a href ="#EditTour" data-icon="gear" class="ui-btn-active ui state-persist">Edit Tour Package</a> </li>
+            </ul>
+        </div>
+    </header>
+
+    <section data-role="content">
+
+        <h3>Edit Tour Packages</h3>
+
+        <ul data-role="listview" class="ui-listview-inset" data-split-icon="gear">
+            <li>
+                <a href="#" >
+                    <h2>Tour Package Name: Dubai</h2>
+                    <p>Places: Burj Khalifa</p>
+                    <p>Description: Enjoying exotic desert</p>
+                    <p>Price / person: $1750.55 </p>
+                    <p>Days: 6 Days 5 Nights</p>
+                    <p>Start date: 2023/01/11</p>
+                    <p>End date: 2023/01/17</p>
+                    <a href= "#EditData"></a>
+                </a>
+            </li>
+
+            <li>
+                    <a href="#" >
+                        <h2>Tour Package Name: Maldives</h2>
+                        <p>Places: Bandos Island</p>
+                        <p>Description: Enjoying Beaches</p>
+                        <p>Price / person: $2150.95 </p>
+                        <p>Days: 7 Days 6 Nights</p>
+                        <p>Start date: 2023/02/11</p>
+                        <p>End date: 2023/02/18</p>
+                        <a href= "#EditData"></a>
+                    </a>
+            </li>
+        </ul>
+    </section>
+    <footer data-role="footer" data-position="fixed">
+        <h3>&copy; 2022 Trippy Trips</h3>
+    </footer>
+</div>
+
+<!--Edit-->
+<div id="EditData" data-role="page">
+
+    <header data-role="header" data-theme="a" data-position="fixed">
+
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#HomePage">
+                        <img src="img/airplane.png" class="imgLogo">
+                        <p class="p1">Home</p>
+                    </a>
+                </li>
+                <h1>Trippy Trips</h1>
+                <li>
+                    <a href="#Employee">
+                        <img src="img/software-engineer.png" class="imgLogo1">
+                        <p class="p2">Employee</p>
+                    </a>
+
+                </li>
+            </ul>
+
+            <ul>
+                <li><a href="#Employee" data-icon="home" >List of Tours</a> </li>
+                <li><a href ="#BookingsList" data-icon="grid">Bookings</a> </li>
+                <li><a href ="#AddTour" data-icon="plus"  class="ui-btn-active ui state-persist">Add Tour Package</a> </li>
+                <li><a href ="#EditTour" data-icon="gear">Edit Tour Package</a> </li>
+            </ul>
+        </div>
+    </header>
+
+    <section data-role="content">
+
+        <label for = "updatetourName">Tour Package Name</label>
+        <input type="text" id="updatetourName" name="updatetourName">
+
+        <label for="updateplaces">Places:</label>
+        <input type="text" id="updateplaces" name="updateplaces">
+
+        <label for="updatedescription">Description:</label>
+        <input type="text" id="updatedescription" name="updatedescription">
+
+        <label for="updatenumPerson1">Number Of Person:</label>
+        <select name="updatenumPerson1" id="updatenumPerson1" data-native-menu="false">
+            <option value="One">1</option>
+            <option value="Two" selected>2</option>
+            <option value="Three" >3</option>
+            <option value="Four">4</option>
+            <option value="Five">5</option>
+            <option value="Six">6</option>
+            <option value="Seven">7</option>
+            <option value="Eight">8</option>
+            <option value="Nine">9</option>
+            <option value="Ten">10</option>
+        </select>
+
+        <label for="updatenoOfDays">No. of Days:</label>
+        <input type="text" id="updatenoOfDays" name="updatenoOfDays">
+
+        <label for="updatestartDate">Start Date: </label>
+        <input type="date" id="updatestartDate" name="updatestartDate">
+
+        <label for="updateendDate">Start Date: </label>
+        <input type="date" id="updateendDate" name="updateendDate">
+        <br>
+
+        <button style = "background-color: #008CBA; color: white">Update</button>
+        <button style = "background-color: #B90000; color: white">Delete</button>
+        <button style = "background-color: #008000; color: white">Cancel</button>
+
+    </section>
+
+    <footer data-role="footer" data-position="fixed">
+        <h3>&copy; 2022 Trippy Trips</h3>
+    </footer>
+</div>
+
+</body>
+</html>
+
+<script>
+    function congratulations() {
+        alert("Congratulations your tour is successfully booked !!!");
+        window.location.href = "index.html";
+    }
+
+
+</script>
